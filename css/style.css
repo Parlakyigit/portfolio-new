@@ -1,0 +1,55 @@
+:root {
+  --bs-primary: #b4dfef;
+  --bs-primary-rgb: 180, 223, 239;
+  /* --bs-primary-rgb: 255, 255, 255; */
+  --bs-secondary: #031d44;
+  --bs-secondary-rgb: 3, 29, 68;
+  /* --bs-secondary-rgb: 180, 223, 239; */
+  --bs-dark: #000;
+  --bs-dark-rgb: 0, 0, 0;
+}
+
+.navbar-nav.nav-link {
+  background-color: var(--bs-secondary-rgb);
+  color: var(--bs-primary);
+}
+.navbar-nav .nav-item .active,
+.navbar-nav
+  .nav-link:hover
+  .navbar-nav
+  .nav-link:focus
+  .navbar-nav
+  .nav-link:active {
+  background-color: var(--bs-primary);
+  color: var(--bs-dark);
+}
+
+/* a {
+  color: inherit;
+} */
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-secondary-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
+@keyframes bounce-few-times {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.animation-bounce {
+  animation: bounce-few-times 1s 3;
+}

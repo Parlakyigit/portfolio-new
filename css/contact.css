@@ -1,0 +1,73 @@
+:root {
+  --bs-primary: #b4dfef;
+  --bs-primary-rgb: 180, 223, 239;
+  --bs-secondary: #031d44;
+  --bs-secondary-rgb: 3, 29, 68;
+  --bs-dark: #000;
+  --bs-dark-rgb: 0, 0, 0;
+}
+
+.navbar-nav.nav-link {
+  background-color: var(--bs-secondary-rgb);
+  color: var(--bs-primary);
+}
+.navbar-nav .nav-item .active,
+.navbar-nav
+  .nav-link:hover
+  .navbar-nav
+  .nav-link:focus
+  .navbar-nav
+  .nav-link:active {
+  background-color: var(--bs-primary);
+  color: var(--bs-dark);
+}
+
+/* a {
+    color: inherit;
+  } */
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-secondary-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+.btn-dark {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-secondary-rgb);
+  --bs-btn-border-color: #212529;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #424649;
+  --bs-btn-hover-border-color: #373b3e;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4d5154;
+  --bs-btn-active-border-color: #373b3e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-secondary-rgb);
+  --bs-btn-disabled-border-color: #212529;
+}
+
+/* Media query for iPad Mini screen width range */
+@media (min-width: 768px) {
+  #userName,
+  #exampleInputEmail1 {
+    width: calc(40% - 3px);
+    margin-right: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  #message {
+    width: calc(100% - 16px);
+    margin-right: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  iframe {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
